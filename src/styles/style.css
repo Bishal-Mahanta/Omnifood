@@ -245,8 +245,8 @@ body {
 .step-img-container::before,
 .step-img-container::after {
   content: "";
-  width: 14%;
-  height: 28%;
+  width: 2%;
+  padding: 12rem;
   background-color: #fae5d3;
   border-radius: 50%;
   position: absolute;
@@ -254,8 +254,8 @@ body {
 }
 
 .step-img-container::after {
-  width: 18%;
-  height: 36%;
+  width: 2%;
+  padding: 18rem;
   background-color: #fdf2e9;
   z-index: -2;
 }
@@ -294,4 +294,146 @@ body {
   height: 3.2rem;
   filter: brightness(0);
   opacity: 50%;
+}
+
+/**************************/
+/** MEALS **/
+/**************************/
+.meals {
+  margin: 0 auto;
+  width: 120rem;
+  padding: 8.4rem 0;
+  text-align: center;
+}
+
+.meals-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 9.6rem;
+  gap: 6.4rem;
+  padding: 0 3.2rem;
+  margin-bottom: 7.2rem;
+}
+
+.meal-cards {
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  transition: all 0.5s;
+}
+
+.meal-cards:hover {
+  transform: translateY(-8px);
+}
+
+.meal-card-features {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.tag {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  color: #333;
+  border-radius: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.tag-vegetarian {
+  background-color: #51cf66;
+}
+
+.tag-vegan {
+  background-color: #94d82d;
+}
+
+.tag-paleo {
+  background-color: #ffd43b;
+}
+
+.heading-quaternary {
+  margin: 2.4rem 0 3.2rem 0;
+  font-size: 2.4rem;
+}
+
+.meal-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-feature p {
+  font-size: 1.8rem;
+}
+
+.meal-feature p span {
+  font-weight: 500;
+}
+
+.meal-features {
+  padding: 2.4rem 0 3.2rem 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-feature-heading {
+  font-size: 2.4rem;
+}
+
+.meal-feature-list {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  line-height: 2.4;
+}
+
+.meal-feature-list div {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.la-check,
+.la-burn,
+.la-utensils,
+.la-star {
+  color: #cf711f;
+}
+
+.mr-icons {
+  margin-right: 1.2rem;
+}
+
+.btn-recipies:link,
+.btn-recipies:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #cf711f;
+  position: relative;
+}
+
+.btn-recipies:link:after,
+.btn-recipies:visited:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #cf711f;
+  transition: all 0.6s;
+}
+
+.btn-recipies:hover:after,
+.btn-recipies:hover:active {
+  width: 100%;
 }
