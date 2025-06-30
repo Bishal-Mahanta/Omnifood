@@ -11,7 +11,7 @@
 --- TINTS: #fdf2e9, #fdf2e9, #fae5d3
 --- SHADES: #cf711f
 --- ACCENTS: 
---- GRAYS: #555, #333, #ddd, #888
+--- GRAYS: #555, #333, #ddd, #888, #6f6f6f
 */
 
 /**************************/
@@ -405,7 +405,12 @@ body {
 .la-check,
 .la-burn,
 .la-utensils,
-.la-star {
+.la-star,
+.la-times,
+.la-apple-alt,
+.la-leaf,
+.la-pause,
+.la-infinity {
   color: #cf711f;
 }
 
@@ -436,4 +441,285 @@ body {
 .btn-recipies:hover:after,
 .btn-recipies:hover:active {
   width: 100%;
+}
+
+/**************************/
+/** TESTIMONIAL & GALLERY **/
+/**************************/
+.testimonials {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.6rem;
+  background-color: #fdf2e9;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials-heading {
+  padding: 0 0 0 9.6rem;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+
+  padding: 9.6rem;
+}
+
+.testimonial div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.testimonial div img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+}
+
+.testimonial-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.author {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.gallery-container div {
+  overflow: hidden;
+}
+
+.gallery-container img {
+  width: 100%;
+  transition: all 0.6s;
+}
+
+.gallery-container img:hover {
+  scale: 1.2;
+}
+
+/**************************/
+/** PRICING **/
+/**************************/
+.pricing {
+  padding: 9.6rem 0;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.pricing-container {
+  margin-bottom: 9.6rem;
+}
+
+.pricing-cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 4.8rem;
+}
+
+.card {
+  border: 2px solid #fdf2e9;
+  border-radius: 8px;
+  padding: 7.2rem;
+}
+
+.card .heading-text {
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.card--1,
+.card--2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card--2 {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.card--2::before {
+  position: absolute;
+  content: "BEST VALUE";
+  color: #333;
+  background-color: #ffd43b;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.2rem 4.8rem;
+  transform: rotate(45deg);
+  top: 32px;
+  right: -42px;
+}
+
+.meal-value {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.meal-value span {
+  font-size: 3rem;
+}
+
+.sub-desc {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #6f6f6f;
+  margin-bottom: 4.8rem;
+}
+
+.meal-features {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.meal-features li {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.meal-features li:last-child {
+  margin-bottom: 3.6rem;
+}
+
+.card-heading-text {
+  margin-bottom: 3.2rem;
+}
+
+.meals-sub-text {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 9.6rem;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3.2rem;
+}
+
+.features-desc {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-top: 1.6rem;
+}
+
+.la-pause,
+.la-infinity,
+.la-leaf,
+.la-apple-alt {
+  position: relative;
+  margin: 1.2rem 0 3.2rem 1.2rem;
+}
+
+.la-pause::after,
+.la-infinity::after,
+.la-apple-alt::after,
+.la-leaf::after {
+  position: absolute;
+  content: "";
+
+  height: 6.4rem;
+  width: 6.4rem;
+
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -2;
+}
+
+/**************************/
+/** CTA **/
+/**************************/
+.section-cta {
+  padding: 3.6rem 0 9.6rem 0;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.container-cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 8px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+.cta-form-container {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(235, 152, 78),
+    rgb(230, 126, 34)
+  );
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-form-container .heading-secondary,
+.cta-form-container .cta-desc {
+  color: #45260a;
+}
+
+.cta-desc {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-top: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-container {
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(235, 152, 78, 0.4),
+      rgb(230, 126, 34, 0.4)
+    ),
+    url(../img/eating.jpg);
+
+  background-position: center;
+  background-size: cover;
+
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form div {
+  display: flex;
+  flex-direction: column;
 }
